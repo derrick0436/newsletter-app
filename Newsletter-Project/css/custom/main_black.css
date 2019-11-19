@@ -1,0 +1,99 @@
+.search{
+    margin-left: 15px;
+}
+
+.big-icon{
+    font-size: 25px;
+}
+
+.xbig-icon{
+    font-size: 65px;
+}
+
+.menu .main-menu ul li a:hover, .menu .main-menu ul li a:focus{
+    color: #ffda0d;
+}
+
+/*Card & Logo*/
+.icon-cards-row .lead{
+    color: #fff; 
+}
+
+.icon-cards-row i{
+    color: #ffda0d; 
+}
+
+.icon-cards-row .card-text{
+    color: #fff;
+}
+
+.card{
+    border-radius: 20px;
+}
+
+.card:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-icon{
+    font-size:50px !important;
+}
+
+.sub-card-text{
+    font-size:25px;
+    color:black;
+}
+.icon-cards-row .card-text{
+    line-height: 25px;   
+}
+
+/*NavBar Logo*/
+.logo{
+    width:180px;
+}
+  @media (max-width: 999px) {
+    .logo {
+      width: 140px; } }
+
+  @media (max-width: 750px) {
+    .logo {
+      width: 120px; } }
+
+  @media (max-width: 649px) {
+    .logo {
+      width: 100px; } }
+
+.menu .main-menu ul li.active:after{
+    background: #ffda0d; 
+}
+
+.menu .main-menu ul li.active a i{
+    color: #ffda0d;    
+}
+
+.menu .main-menu ul li.active a{
+    color: #fff;    
+}
+
+/*NavBar Name*/
+.name{
+    color:white;
+}
+
+/*Profile Picture*/
+.profile-pic{
+    border-radius: 30px;
+    width:80px;
+}
+
+/*Loading*/
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #ffda0d;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+

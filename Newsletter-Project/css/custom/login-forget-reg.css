@@ -1,0 +1,29 @@
+body{
+    background-color:#ffffff; 
+}
+
+.fixed-background{
+    background: 0;
+}
+.auth-card .image-side{
+    background: 0;
+    background-color: #2C2C2C;
+}
+.alert-icon{
+    font-size: 50px;
+    color: white;
+}
+
+.btn-primary{
+    background-color: black;
+    color: #ffda0d;
+}
+
+.btn-primary:hover{
+    background-color: black;
+    color: white;
+}
+
+.role-txt{
+    color: #ffda0d;  
+}
