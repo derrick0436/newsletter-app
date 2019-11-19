@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ohcoolsy | Newsfeed</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+
+    <link rel="stylesheet" href="font/iconsmind-s/css/iconsminds.css" />
+    <link rel="stylesheet" href="font/simple-line-icons/css/simple-line-icons.css" />
+
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap.rtl.only.min.css" />
+    <link rel="stylesheet" href="css/vendor/component-custom-switch.min.css" />
+    <link rel="stylesheet" href="css/vendor/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/dore.light.blue.css" />
+    <link rel="stylesheet" href="css/custom/main.css" />
+</head>
+
+<body id="app-container" class="menu-default show-spinner">
+    <!--Top Nav Bar -->
+    <nav class="navbar fixed-top">
+        <div class="d-flex align-items-center navbar-left">
+            <a href="#" class="menu-button d-none d-md-block">
+                <svg class="main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 17">
+                    <rect x="0.48" y="0.5" width="7" height="1" />
+                    <rect x="0.48" y="7.5" width="7" height="1" />
+                    <rect x="0.48" y="15.5" width="7" height="1" />
+                </svg>
+                <svg class="sub" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17">
+                    <rect x="1.56" y="0.5" width="16" height="1" />
+                    <rect x="1.56" y="7.5" width="16" height="1" />
+                    <rect x="1.56" y="15.5" width="16" height="1" />
+                </svg>
+            </a>
+
+            <a href="#" class="menu-button-mobile d-xs-block d-sm-block d-md-none">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 17">
+                    <rect x="0.5" y="0.5" width="25" height="1" />
+                    <rect x="0.5" y="7.5" width="25" height="1" />
+                    <rect x="0.5" y="15.5" width="25" height="1" />
+                </svg>
+            </a>
+        </div>
+
+        <a class="navbar-logo" href="Dashboard.Default.html">
+            <img class="d-sm-none" src="img/favicon.png" style="width: 50px;"> <!-- this one will be visible on mobile -->
+            <img class="d-none d-sm-block logo" src="img/logo.png"> <!-- this one will be visible on everything else -->
+        </a>
+
+        <div class="navbar-right">
+            <div class="user d-inline-block">
+                    <a href="pages/login.html">Login</a> / <a href="pages/register.html">Register</a>
+            </div>
+        </div>
+    </nav>
+    <!--Left Nav Bar -->
+    <div class="menu">
+        <div class="main-menu">
+            <div class="scroll">
+                <ul class="list-unstyled">
+                    <li class="active">
+                        <a href="#dashboard">
+                            <i class="simple-icon-rocket"></i>
+                            <span>Newsfeeds</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <i class="simple-icon-rocket big-icon"></i>
+                    <h1 class="d-inline-block">Newsfeed</h1>
+                    <div class="mb-2">
+                        <a class="btn pt-0 pl-0 d-inline-block d-md-none" data-toggle="collapse" href="#displayOptions" role="button" aria-expanded="true" aria-controls="displayOptions">
+                            Sort by
+                            <i class="simple-icon-arrow-down align-middle"></i>
+                        </a>
+                        <div class="d-md-block collapse" id="displayOptions" style="">
+                            <div class="d-block d-md-inline-block">
+                                <div class="btn-group float-md-left mr-1 mb-1">
+                                    <button class="btn btn-outline-dark btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Categories
+                                    </button>
+                                    <div class="dropdown-menu" id="categoryMenu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 5px, 0px); top: 0px; left: 0px; will-change: transform;" x-out-of-boundaries="">
+                                    </div>
+                                </div>
+                                <div class="btn-group float-md-left mr-1 mb-1">
+                                    <button class="btn btn-outline-dark btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Month
+                                    </button>
+                                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 5px, 0px); top: 0px; left: 0px; will-change: transform;" x-out-of-boundaries="">
+                                        <a class="dropdown-item" href="#" onclick="viewEventByMonth(1);viewPostByMonth(1);return false;">Janury</a>
+                                        <a class="dropdown-item" href="#" onclick="viewEventByMonth(2);viewPostByMonth(2);return false;">Febuary</a>
+                                        <a class="dropdown-item" href="#" onclick="viewEventByMonth(3);viewPostByMonth(3);return false;">March</a>  
+                                        <a class="dropdown-item" href="#" onclick="viewEventByMonth(4);viewPostByMonth(4);return false;">April</a>  
+                                        <a class="dropdown-item" href="#" onclick="viewEventByMonth(5);viewPostByMonth(5);return false;">May</a>  
+                                        <a class="dropdown-item" href="#" onclick="viewEventByMonth(6);viewPostByMonth(6);return false;">June</a>  
+                                        <a class="dropdown-item" href="#" onclick="viewEventByMonth(7);viewPostByMonth(7);return false;">July</a>  
+                                        <a class="dropdown-item" href="#" onclick="viewEventByMonth(8);viewPostByMonth(8);return false;">August</a>  
+                                        <a class="dropdown-item" href="#" onclick="viewEventByMonth(9);viewPostByMonth(9);return false;">September</a>
+                                        <a class="dropdown-item" href="#" onclick="viewEventByMonth(10);viewPostByMonth(10);return false;">October</a>
+                                        <a class="dropdown-item" href="#" onclick="viewEventByMonth(11);viewPostByMonth(11);return false;">November</a>
+                                        <a class="dropdown-item" href="#" onclick="viewEventByMonth(12);viewPostByMonth(12);return false;">December</a>  
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>     
+                    <div class="separator mb-5"></div>
+                </div>
+            </div>
+            <div class="row icon-cards-row" id="allEvent">
+            </div>       
+            <div class="separator mb-5"></div>
+            <div class="row icon-cards-row" id="allPost">
+            </div>
+        </div>
+        <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="viewE_title"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="owl-container mb-4">
+                            <div class="event-picLoading"></div>
+                            <div class="gallery owl-carousel" id="viewE_pic">
+                            </div> 
+                            <div class="separator mb-5"></div>
+                            <div class="row text-left mb-3" style="font-size:20px;">
+                                <div class="glyph-icon iconsminds-watch"></div> 
+                                <div class="mr-3" id="viewE_time">
+                                </div>    
+                                <div class="glyph-icon iconsminds-embassy"></div>
+                                <div id="viewE_venue">
+                                </div>                                    
+                            </div>                              
+                            <p class="text-justify" id="viewE_content">
+                            </p>
+                          
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <a href="pages/login.html"><button type="button" class="btn btn-primary">Invite</button></a>
+                        <a href="pages/login.html"><button type="button" class="btn btn-primary">Join Event</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="modal fade" id="articleModal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="viewP_title"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="post-picLoading"></div>
+                        <div id="viewP_img"></div>
+                        <div class="separator mb-5"></div>
+                        <p class="text-justify" id="viewP_content">
+                        </p>       
+                        <div id="viewP_author" class="text-left"></div>   
+                        <br>
+                        <div class="text-left">
+                        <a href="pages/login.html"><button type="button" class="btn btn-outline-primary mb-1"><div class="glyph-icon iconsminds-like"></div></button></a>
+                        <a href="pages/login.html"><button href="#allComments" type="button" class="btn btn-outline-secondary mb-1" data-toggle="collapse"><div class="glyph-icon iconsminds-speach-bubble "></div></button></a>          
+                        </div>
+                        <div class="separator mb-3"></div>
+                        <div id="allComments" class="collapse" style="padding:16px;">
+                            <div class="row">
+                                <h5>Comments Sections</h5>
+                            </div>    
+                            <div class="row">
+                                <div class="card col-12 mb-3">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row pb-2">
+                                            
+                                            <div class="d-flex flex-grow-1 min-width-zero">
+                                                <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                                    <div class="min-width-zero">
+                                                        <p class="mb-0 list-item-heading truncate">Dummy <span class="text-muted" style="font-size:10px;">(10-12-2019)</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="text-left ml-2" >
+                                            <p class="mb-0 text-semi-muted">
+                                                Hello. I am Dummy.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                
+                                <input type="text" class="form-control" placeholder="Leave a comments...">    
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>          
+    </main>
+
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/perfect-scrollbar.min.js"></script>
+    <script src="js/vendor/mousetrap.min.js"></script>
+    <script src="js/vendor/owl.carousel.min.js" ></script>  
+    <script src="js/dore.script.js"></script>
+    <script src="js/scripts.single.theme.js"></script>
+    <script src="js/func/loginRedirect-member.js"></script>    
+    <script src="js/func/index.js"></script>
+</body>
+
+</html>
