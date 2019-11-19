@@ -1,7 +1,9 @@
 # newsletter-app
 Newsletter app to manage newsletter and view
 Tutorial for Installations
+
 Warning: If there is any errors using the folders files. Try the .zip files which is more stable because the folders when upload may be loss one or more files.
+
 1. First,download the Folder or all the stuff inside the folder from GitHub which is call "Newsletter-Project".
 2. Then,copy and paste all the files that is inside the folder into your localhost files or the server if you have one.
 3. After finish,import the data.sql file inside the "Newsletter-Project" folder into your phpMyAdmin.
