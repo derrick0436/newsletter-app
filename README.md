@@ -26,7 +26,7 @@ Password: admin123
 
 Credentials for (Member)
 -------------------------------------------
-Note: User that just register will not be ablt to access immediately, unless the admin approved. Also, user that has been blocked by admin will be login too.
+Note: User that just register will not be ablt to access immediately, unless the admin approved. Also, user that has been blocked by admin will not be able to login too.
 
 1. user 1 (that has more post)
 Username: derrick
