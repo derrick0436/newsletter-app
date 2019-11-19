@@ -33,20 +33,24 @@ Note: User that just register will not be ablt to access immediately, unless the
 
 1. user 1 (that has more post)
 
-Username: derrick
-Password: derrick123
+  Username: derrick
+
+  Password: derrick123
 
 2. user 2
 
-Username: choohuiqi
-Password: choohuiqi123
+  Username: choohuiqi
+
+  Password: choohuiqi123
 
 3. user 3
 
-Username: eugene
-Password: eugene123
+  Username: eugene
+  
+  Password: eugene123
 
 4. user 4
 
-Username: chenxiang
-Password: chenxiang123
+  Username: chenxiang
+
+  Password: chenxiang123
