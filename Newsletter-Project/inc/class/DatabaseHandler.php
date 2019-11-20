@@ -17,7 +17,7 @@ class DatabaseHandler {
         $this->pass = $pass ?? "12345";
         
         try{
-            $this->db_con = new PDO("mysql:host=".$this->host.";dbname=".$this->dbName,$this->user,$this->pass);
+            $this->db_con = new PDO("mysql:host=".$this->host.";dbname=".$this->dbName.";charset=utf8",$this->user,$this->pass);
             $this->db_con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }catch(PDOException $e){
             echo $e->getMessage();
