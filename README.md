@@ -6,9 +6,9 @@ Warning: If there is any errors using the folders files. Try the .zip files whic
 
 1. First,download the Folder or all the stuff inside the folder from GitHub which is call "Newsletter-Project".
 2. Then,copy and paste all the files that is inside the folder into your localhost files or the server if you have one.
-3. After finish,download the data.sql too.
+3. After finish,download the data.sql.zip too.
 4. Create a new database call "u688446224_CSE3033".
-5. Import the data.sql into the newly created database.
+5. Import the data.sql.zip into the newly created database.
 6. Change the credentials of the database.
 
   GOTO ->>> inc/class/DatabaseHandler.php
