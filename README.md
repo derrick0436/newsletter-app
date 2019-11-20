@@ -23,8 +23,8 @@ Warning: If there is any errors using the folders files. Try the .zip files whic
   
   $this->pass = $pass ?? "YOUR PASSWORD HERE";
 
-6. Try and run the project by typing the URL.
-7. Then login into the system or apps to access different roles features.
+7. Try and run the project by typing the URL.
+8. Then login into the system or apps to access different roles features.
 
 URL(Member)
 -------------------------------------------
