@@ -6,9 +6,19 @@ Warning: If there is any errors using the folders files. Try the .zip files whic
 
 1. First,download the Folder or all the stuff inside the folder from GitHub which is call "Newsletter-Project".
 2. Then,copy and paste all the files that is inside the folder into your localhost files or the server if you have one.
-3. After finish,download the data.sql too and import into your phpMyAdmin.
-4. Try and run the project by typing the URL.
-5. Then login into the system or apps to access different roles features.
+3. After finish,download the data.sql too.
+4. Create a new database call "u688446224_CSE3033".
+5. Import the data.sql into the newly created database.
+6. Change the credentials of the database.
+  GOTO ->>> inc/class/DatabaseHandler.php
+  You will see something like this down here, change all the credentials that you need.
+  $this->host = $host ?? "YOUR HOST NAME HERE"; 
+  $this->dbName = $dbName ?? "YOUR DB NAME HERE";        
+  $this->user = $user ?? "YOUR USERNAME HERE";
+  $this->pass = $pass ?? "YOUR PASSWORD HERE";
+
+6. Try and run the project by typing the URL.
+7. Then login into the system or apps to access different roles features.
 
 URL(Member)
 -------------------------------------------
