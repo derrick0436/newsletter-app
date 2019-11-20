@@ -10,7 +10,9 @@ Warning: If there is any errors using the folders files. Try the .zip files whic
 4. Create a new database call "u688446224_CSE3033".
 5. Import the data.sql into the newly created database.
 6. Change the credentials of the database.
+
   GOTO ->>> inc/class/DatabaseHandler.php
+  
   You will see something like this down here, change all the credentials that you need.
   
   $this->host = $host ?? "YOUR HOST NAME HERE"; 
