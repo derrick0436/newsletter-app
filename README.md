@@ -6,7 +6,7 @@ Warning: If there is any errors using the folders files. Try the .zip files whic
 
 1. First,download the Folder or all the stuff inside the folder from GitHub which is call "Newsletter-Project".
 2. Then,copy and paste all the files that is inside the folder into your localhost files or the server if you have one.
-3. After finish,import the data.sql file inside the "Newsletter-Project" folder into your phpMyAdmin.
+3. After finish,download the data.sql too and import into your phpMyAdmin.
 4. Try and run the project by typing the URL.
 5. Then login into the system or apps to access different roles features.
 
