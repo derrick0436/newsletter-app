@@ -12,9 +12,13 @@ Warning: If there is any errors using the folders files. Try the .zip files whic
 6. Change the credentials of the database.
   GOTO ->>> inc/class/DatabaseHandler.php
   You will see something like this down here, change all the credentials that you need.
+  
   $this->host = $host ?? "YOUR HOST NAME HERE"; 
-  $this->dbName = $dbName ?? "YOUR DB NAME HERE";        
+  
+  $this->dbName = $dbName ?? "YOUR DB NAME HERE";      
+  
   $this->user = $user ?? "YOUR USERNAME HERE";
+  
   $this->pass = $pass ?? "YOUR PASSWORD HERE";
 
 6. Try and run the project by typing the URL.
